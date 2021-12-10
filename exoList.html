@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Liste d'utilisateur</h1>
+    <form id="formulaire" >
+        <span>Prénom: <input id="Prenom" type="text"/></span>
+        <span>Age: <input id="Age" type="number"/></span>
+        <span><label for="role">Role: </label><select id="Role" name="roles">
+            <option value=""></option>
+            <option value="utilisateur">utilisateur</option>
+            <option value="administrateur">administrateur</option></select></span>
+        <span><button id="create">Créer</button></span>
+    </form>
+    <div>
+        <button id="tId">Tri par ID</button>
+        <button id="tPrenom">Tri par prénom</button>
+        <button id="tAge">Tri par age</button>
+        <input type="search" id="search" placeholder="Recherche : ">
+    </div>
+    <div id="userList"></div>
+    <script src="exoList.js"></script>
+</body>
+</html>
